@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+}
+
+body {
+    background-image: url("./gameImages/wall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+
+
+}
+
+.container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.terror {
+    height: 100px;
+}
+
+img::selection {
+    background-color: transparent;
+}
+
+.bloodspot {
+    position: absolute;
+    height: 50px;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    color: #fff;
+    border: 2px solid#fff;
+    padding: 15px 45px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    margin-top: 3em;
+    outline: none;
+    cursor: none;
+}
+
+.cursor {
+    position: absolute;
+    height: 70px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 2;
+    transition: 0.1s ease;
+    transform-origin: 100% 100%;
+}
